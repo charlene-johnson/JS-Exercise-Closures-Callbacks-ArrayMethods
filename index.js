@@ -112,8 +112,9 @@ function processSum(num1, num2, callback) {
  * [2] Invoking `processProduct` passing 25 and 0 and `(num) => num + 1000`,
  * should return 1000.
 */
-function processProduct(/* CODE HERE */) {
-  /* CODE HERE */
+function processProduct(num1, num2, callback) {
+  let multiply = num1 * num2;
+  return callback(multiply)
 }
 
 /**
@@ -157,8 +158,12 @@ function processDuplicateFree(/* CODE HERE ONLY AFTER COMPLETING ALL OTHER TASKS
  * 
  * [2] Invoking `lowerCaseStrings` with `['a', 'b', 'c' ]` will return `[ 'a', 'b', 'c' ]`.
 */
-function lowerCaseStrings(/* code here */) {
-  /* code here */
+function lowerCaseStrings(strings) {
+  const lower = []
+  strings.forEach((arrItem)=>{
+    lower.push(arrItem.toLowerCase(strings))
+  });
+  return lower
 }
 
 /**
@@ -176,10 +181,17 @@ function lowerCaseStrings(/* code here */) {
  * 
  * [2] Invoking `isItAnApple` with `['a', 'b', 'c' ]` will return `[ false, false, false ]`.
 */
-function isItAnApple(/* code here */) {
-  /* code here */
-}
+function isItAnApple(strings) {
 
+  const apples = strings.map((arrItem)=>{
+    if (arrItem === "apple"){
+      return true;
+    } else {
+      return false;
+    }
+  })
+  return apples
+}
 /**
  * ### Challenge `removeApple`
  * 
@@ -196,8 +208,11 @@ function isItAnApple(/* code here */) {
  * 
  * [2] Invoking `removeApple` with `['a', 'b', 'c' ]` will return `[ 'a', 'b', 'c' ]`.
 */
-function removeApple(/* code here */) {
-  /* code here */
+function removeApple(strings) {
+  strings.filter((arrItem)=>{
+    
+  });
+  
 }
 
 /**
