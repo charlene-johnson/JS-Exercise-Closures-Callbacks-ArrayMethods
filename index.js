@@ -331,7 +331,7 @@ function tallyUpDonations(/* CODE HERE */) {
  *  counter1 is a local scope and counter2 is a global scope
  * 
  * 2. Which of the two uses a closure? How can you tell?
- * Counter2 is the closure because it reaches outside of the scope to find the variable.
+ * Counter1 is the closure because it reaches outside of the scope to find the variable.
  * 
  * 3. In what scenario would the counter1 code be preferable? In what scenario would counter2 be better? 
  * counter1 would be useful if you want to use varaibles with the same name and use them in different functions, the counter2 would be better because all scripts and functions can access it.
